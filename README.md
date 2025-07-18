@@ -6,10 +6,13 @@ This is a simple Python script that prints a cool **ASCII art logo** of Pokémon
 
 ---
 
-## 🐍 What the Script Does
+It’s perfect for beginners learning how to use:
 
-- Displays a large ASCII-styled Pokémon title using `print()` and triple quotes
-- Can be reused in larger Python projects (like a Pokémon battle game intro)
+Variables and data types
+Dictionaries
+User input
+Loops and conditional logic
+Random number generation
 
 ---
 
@@ -21,4 +24,4 @@ This is a simple Python script that prints a cool **ASCII art logo** of Pokémon
 ---
 
 ## 📂 File 
-- go to download file then double-click and terminal or command appears
+- go to download file 
