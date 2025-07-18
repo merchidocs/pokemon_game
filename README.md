@@ -8,11 +8,11 @@ This is a simple Python script that prints a cool **ASCII art logo** of Pokémon
 
 It’s perfect for beginners learning how to use:
 
-Variables and data types
-Dictionaries
-User input
-Loops and conditional logic
-Random number generation
+- Variables and data types
+- Dictionaries
+- User input
+- Loops and conditional logic
+- Random number generation
 
 ---
 
