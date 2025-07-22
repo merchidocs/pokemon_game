@@ -1,4 +1,5 @@
 import random
+# ASCII logo
 print('''    ,                           .::.
  PokeMon Logo Converted       .;:**'            AMC
                               `                  0
