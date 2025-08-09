@@ -1,7 +1,7 @@
 import random
 import time
 # ASCII logo
-print('''    ,                           .::.
+logo = ('''    ,                           .::.
  PokeMon Logo Converted       .;:**'            AMC
                               `                  0
   .:XHHHHk.              db.   .;;.     dH  MX   0
@@ -14,9 +14,12 @@ QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
       MMMX   "MMMM"  MM       ~%:           !Mh.""" dMI IMMP
       'MMM.                                             IMX
        ~M!M                                             IMP
-''')time.sleep(1.0)
+''')
+print(logo)
+
 # Game intro
 print("Welcome to the Pokemon Battle Arena!\n")
+time.sleep(1.0)
 
 # Pokemon data
 player_pokemon = {
@@ -63,4 +66,5 @@ while player_pokemon["hp"] > 0 and enemy_pokemon["hp"] > 0:
         print(f"\n{player_pokemon['name']} fainted! 😵 You lose!")
 
 print("\nGame over.")
+
 
