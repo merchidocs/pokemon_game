@@ -19,7 +19,7 @@ print(logo)
 
 # Game intro
 print("Welcome to the Pokemon Battle Arena!\n")
-time.sleep(1.0)
+time.sleep(1)
 
 # Pokemon data
 player_pokemon = {
