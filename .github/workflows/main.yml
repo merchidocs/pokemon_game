@@ -14,7 +14,7 @@ QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
       MMMX   "MMMM"  MM       ~%:           !Mh.""" dMI IMMP
       'MMM.                                             IMX
        ~M!M                                             IMP''')
-time.sleep(1.0)
+time.sleep(1)
 
 #--- GAME INTRODUCTION ---
 print("Welcome to the Pokemon Battle Arena!\n")
