@@ -38,8 +38,7 @@ while player_pokemon["hp"] > 0 and enemy_pokemon["hp"] > 0:
     input("\nPress Enter to attack...")
 
     # Player attacks enemy
-    player_damage = random.randint(player_pokemon["attack"][0], player_pokemon["attack"][1
-    ])
+    player_damage = random.randint(player_pokemon["attack"][0], player_pokemon["attack"][1])
     enemy_pokemon["hp"] -= player_damage
     print(f"{player_pokemon['name']} attacks for {player_damage} damage!")
 
