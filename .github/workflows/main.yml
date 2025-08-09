@@ -1,7 +1,7 @@
 import random
 import time
 # ASCII logo
-logo = ('''    ,                           .::.
+print('''    ,                           .::.
  PokeMon Logo Converted       .;:**'            AMC
                               `                  0
   .:XHHHHk.              db.   .;;.     dH  MX   0
@@ -15,7 +15,6 @@ QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
       'MMM.                                             IMX
        ~M!M                                             IMP
 ''')
-print(logo)
 
 # Game intro
 print("Welcome to the Pokemon Battle Arena!\n")
