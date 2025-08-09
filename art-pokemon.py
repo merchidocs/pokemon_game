@@ -1,4 +1,5 @@
 import random
+import time
 # ASCII logo
 print('''    ,                           .::.
  PokeMon Logo Converted       .;:**'            AMC
@@ -13,7 +14,7 @@ QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
       MMMX   "MMMM"  MM       ~%:           !Mh.""" dMI IMMP
       'MMM.                                             IMX
        ~M!M                                             IMP
-''')
+''')time.sleep(1.0)
 # Game intro
 print("Welcome to the Pokemon Battle Arena!\n")
 
@@ -62,3 +63,4 @@ while player_pokemon["hp"] > 0 and enemy_pokemon["hp"] > 0:
         print(f"\n{player_pokemon['name']} fainted! 😵 You lose!")
 
 print("\nGame over.")
+
