@@ -1,0 +1,75 @@
+import random
+#--- GAME LOGO ---
+print('''    ,                           .::.
+ PokeMon Logo Converted       .;:**'            AMC
+                              `                  0
+  .:XHHHHk.              db.   .;;.     dH  MX   0
+oMMMMMMMMMMM       ~MM  dMMP :MMMMMR   MMM  MR      ~MRMN
+QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
+  `MMMM.  )M> :X!Hk. MMMM   XMM.o"  .  MMMMMMM X?XMMM MMM>!MMP
+   'MMMb.dM! XM M'?M MMMMMX.`MMMMMMMM~ MM MMM XM `" MX MMXXMM
+    ~MMMMM~ XMM. .XM XM`"MMMb.~*?**~ .MMX M t MMbooMM XMMMMMP
+     ?MMM>  YMMMMMM! MM   `?MMRb.    `"""   !L"MMMMM XM IMMM
+      MMMX   "MMMM"  MM       ~%:           !Mh.""" dMI IMMP
+      'MMM.                                             IMX
+       ~M!M                                             IMP
+''')
+#--- GAME INTRODUCTION ---
+print("Welcome to the Pokemon Battle Arena!\n")
+
+
+#--- Choose your Pokémon ---
+print("Choose your Pokémon:")
+print("1. Pikachu ⚡")
+print("2. Bulbasaur 🍃")
+print("3. Charmander 🔥")
+
+choice = int(input("Enter 1, 2, or 3: "))
+
+if choice == 1:
+    player_pokemon = {"name": "Pikachu", "hp": 100, "attack": [10, 20]}
+    print("1. Pikachu ⚡")
+
+elif choice == 2:
+    player_pokemon = {"name": "Bulbasaur", "hp": 100, "attack": [8, 18]}
+    print("2. Bulbasaur 🍃")
+
+elif choice == 3:
+    player_pokemon = {"name": "Charmander", "hp": 100, "attack": [12, 22]}
+    print("3. Charmander 🔥")
+
+else:
+    player_pokemon = {"name": "Magikarp", "hp": 80, "attack": [8, 16]}
+    print("Invalid input. You get Magikarp 😅")
+
+enemy_pokemon = {"name": "Wild Eevee", "hp": 100, "attack": [7, 15]}
+
+print(f"\nA wild {enemy_pokemon['name']}appear!")
+
+while player_pokemon['hp'] > 0 and enemy_pokemon['hp'] > 0:
+        input("Press Enter attack...")
+        #--- Player Attack ---
+        player_damage = random.randint(player_pokemon["attack"])
+        enemy_pokemon['hp'] -= player_damage
+        print(f"\n{player_pokemon['name']} deals {player_damage} damage!")
+
+        if enemy_pokemon ["hp"] <= 0:
+            print(f"\n{enemy_pokemon['name']} fainted! 🎉 You win!")
+
+        #--- Enemy Attack ---
+        enemy_damage = random.randint(enemy_pokemon['attack'])
+        player_pokemon['hp'] -= enemy_damage
+        print(f"\n{enemy_pokemon['name']} attack back and deals {enemy_damage} damage!")
+
+        #--- HP  ---
+        print(f"\nYour HP: {player_pokemon['hp']}")
+        print(f"{enemy_pokemon['name']}'s HP: {enemy_pokemon['hp']}\n")
+        time.sleep(1)
+
+        #--- End of Game ---
+        if player_pokemon['hp'] <= 0:
+            print(f"\n{player_pokemon['name']} fainted! 😢 You lose! ")
+
+        print("\nThank you for playing Pokemon Battle Game!")
+
+        
